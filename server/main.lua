@@ -4,7 +4,9 @@ lib.addCommand('id', {
     TriggerClientEvent('ox_lib:notify', source, {
         title = 'City',
         description = 'Your current ID is '.. source,
-        type = 'inform'
+        type = 'inform',
+        icon = 'city',
+        duration = '500'
     })
 
 end)
