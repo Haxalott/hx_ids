@@ -1,6 +1,6 @@
 name 'fivem-typescript-boilerplate'
 author 'Overextended'
-version '0.0.0'
+version '2.0.1'
 repository 'https://github.com/overextended/fivem-typescript-boilerplate.git'
 fx_version 'cerulean'
 game 'gta5'
