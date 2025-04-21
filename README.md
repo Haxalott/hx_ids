@@ -1,17 +1,57 @@
-hx_ids
-                                                                                    
-A simple /id script that displays your ID in the top right using ox_lib's notify.    
- - Clean UI/notify                                                                   
- - Easily editable/customizable                                                      
-                                                                                     
-/id will show your ID                                                                
-                                                                                     
-Tested and used in my server - Zion Networks                                         
-        https://discord.gg/PP77G9ncdN                                                
-   
-Join my scripting discord! - Haxalott's Scripts                                      ![hx_ids](https://github.com/jcwaz/hx_ids/assets/43390732/d0d403f7-fdf9-4d64-bdaf-3ab4b8144bfc)
-https://discord.gg/6fNy49PZbC
-                                                      
-                                                                                     
-Dependencies -- IMPORTANT 
-Ox_lib - NEEDED - https://github.com/overextended/ox_lib
+# fivem-typescript-boilerplate
+
+A boilerplate for creating FiveM resources with TypeScript.
+
+## Getting Started
+
+### Node.js v18+
+
+Install any LTS release of [`Node.js`](https://nodejs.org/) from v18.
+
+### pnpm
+
+Install the [`pnpm`](https://pnpm.io/installation) package manager globally.
+
+```
+npm install -g pnpm
+```
+
+### Setup
+
+Initialise your own repository by using one of the options below.
+
+- [Create a new repository](https://github.com/new?template_name=fivem-typescript-boilerplate&template_owner=overextended) using this template.
+- [Download](https://github.com/overextended/fivem-typescript-boilerplate/archive/refs/heads/main.zip) the template directly.
+- Use the [GitHub CLI](https://cli.github.com/).
+  - `gh repo create <name> --template=overextended/fivem-typescript-boilerplate`
+
+Navigate to your new directory and execute the following command to install dependencies.
+
+```
+pnpm install
+```
+
+## Development
+
+Use `pnpm watch` to actively rebuild modified files while developing the resource.
+
+During web development, use `pnpm web:dev` to start vite's webserver and watch for changes.
+
+## Build
+
+Use `pnpm build` to build all project files in production mode.
+
+To build and create GitHub releases, tag your commit (e.g. `v1.0.0`) and push it.
+
+## Layout
+
+- [/dist/](dist)
+  - Compiled project files.
+- [/locales/](locales)
+  - JSON files used for translations with [ox_lib](https://overextended.dev/ox_lib/Modules/Locale/Shared).
+- [/scripts/](scripts)
+  - Scripts used in the development process, but not part of the compiled resource.
+- [/src/](src)
+  - Project source code.
+- [/static/](static)
+  - Files to include with the resource that aren't compiled or loaded (e.g. config).
